@@ -6,8 +6,8 @@ lostFins = 0
 yourNum = 1
 hasWon = False
 
-fins = ['empty finger', 'Left pinky', 'Left Ring finger', 'Left Middle finger', 'Left Index finger', 'Left Thumb',
-        'Right pinky', 'Right Ring finger', 'Right Middle finger', 'Right Index finger', 'Right Thumb']
+fins = ['empty finger', 'Left pinky', 'Left ring finger', 'Left middle finger', 'Left index finger', 'Left thumb',
+        'Right pinky', 'Right ring finger', 'Right middle finger', 'Right index finger', 'Right thumb']
 lost = ['nothing to see here', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 
 print('You\'ve fallen into an unfavorable position - you\'ve been caught by the Mad Jester')
