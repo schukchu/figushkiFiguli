@@ -3,6 +3,7 @@ import sqlite3
 conn = sqlite3.connect('orders.db')
 cur = conn.cursor()
 
+def create()
 cur.execute("""CREATE TABLE IF NOT EXISTS users(
    userid INT PRIMARY KEY,
    fname TEXT,
@@ -108,9 +109,11 @@ orders = [
   ('00100', '2020-09-02', '00022', '226')
 ]
 
-#cur.executemany("INSERT INTO users VALUES(?, ?, ?, ?);", customers)
-#cur.executemany("INSERT INTO orders VALUES(?, ?, ?, ?);", orders)
-#conn.commit()
+cur.executemany("INSERT INTO users VALUES(?, ?, ?, ?);", customers)
+cur.executemany("INSERT INTO orders VALUES(?, ?, ?, ?);", orders)
+conn.commit()
+
+def safe() 
 cur.execute("SELECT * FROM users;")
 three_results = cur.fetchall()
 print(three_results)
