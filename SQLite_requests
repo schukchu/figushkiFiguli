@@ -1,0 +1,5 @@
+SHOW TABLES - returns all tables as a list
+SELECT * FROM users;
+SELECT * FROM grades; - returns all contents
+SELECT * FROM users, grades WHERE user.user_id = grades.user_id - returns all users with grades
+SELECT * FROM users WHERE name = 'Николай' AND fam = 'Иванов' - returns slots with the given values
