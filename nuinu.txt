@@ -1,0 +1,17 @@
+	inp = input("Please input the type of your operation: \n
+		1) Text problem \n
+		2) Image problem \n
+		3) Sound problem \n")
+match inp:
+    case 1:
+        print('Please input known variables and enter enter if it's unknown')
+	I = input()
+	N = input()
+	i = input()
+        k = input()
+	match:
+		case null 
+    case 2:
+        print('See you later')
+    case 3:
+        print('No match found')
