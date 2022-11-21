@@ -1,3 +1,5 @@
+import math
+
 def reshulya():
     command = int(input(" If you не говорите по-английски, введите текст в кавычках (да, я дуралей)"
                         " \n Please input the type of problem with a number: \n"
@@ -6,12 +8,11 @@ def reshulya():
                         " 3 - Sound problem \n If a variable is unknown, enter 0 \n"
                         " All inputs are considered to be in bits \n"))
     if command == 1 or command == 2:
-        print("hello")
-        N = int(input("Power of the alphabet(number of colours: "))
+        N = int(input("Power of the alphabet(number of colours): "))
         I = int(input("Informational weight of the message: "))
-        i = int(input("Informational weight of a single character: "))
+        i = int(input("Informational weight of a single character/pixel: "))
         k1 = int(input("If this is the only number of characters, press enter for k2 and k3\n"
-                       "The first number of characters(number of characters in a line): "))
+                       "The first number of characters (number of characters in a line): "))
         k2 = int(input("The second number of charcters(number of lines): "))
         k3 = int(input("The third number of characters(number of pages): "))
         if k2 == 0:
@@ -20,20 +21,27 @@ def reshulya():
             k = k1 * k2
         else:
             k = k1 * k2 * k3
-            if i == 0:
-                while N > 0:
-                    N = N // 2
-                    i = i + 1
-                    print (i)
+        if i == 0:
+            if N > 1:
+                i = math.ceil(math.log(N,2))
+            print ("i = " + str(i))
         if k == 0:
-            k = I / i
-            print (k)
+            try:
+                k = I / i
+            except ZeroDivisionError:
+                k = 1
+            if k > 0:
+                print ("k =" + str(k))
         if N == 0:
             N = pow(2,i)
-            print(N)
+            print("N = " + str(N))
         if I == 0:
-            I = k * i
-            print(I)
+            try:
+                I = k * i
+            except ZeroDivisionError:
+                I = 1
+            if I > 0:
+                print("I = " + str(I))
     if command == 0:
         print("Так нельзя, дурашка")
     if command == 3:
@@ -46,26 +54,39 @@ def reshulya():
         if k != 2:
             k = 1
         if N != int("") and i == int(""):
-            while N > 0:
-                N = N // 2
-                i = i + 1
-            print(i)
+            i = math.ceil(math.log(N, 2))
+            print("i = " + str(i))
         else:
-            i = V / D / k / T
-            print(i)
+            try:
+                i = V / D / k / T
+            except ZeroDivisionError:
+                i = 1
+            print("i = " + str(i))
         if N == 0:
             N = pow(2, i)
-            print(N)
+            print("N = " + str(N))
         if D == 0:
-            D = V / k / i / T
-            print(D)
+            try:
+                D = V / k / i / T
+            except ZeroDivisionError:
+                D = 1
+            print("D = " + str(D))
         if T == 0:
-            T = V / k / i / D
-            print(T)
+            try:
+                T = V / k / i / D
+            except ZeroDivisionError:
+                T = 1
+            print("T = " + str(T))
         if k == 0:
-            k = V / D / i / T
-            print(k)
+            try:
+                k = V / D / i / T
+            except ZeroDivisionError:
+                k = 1
+            print("k = " + str(k))
         if V == 0:
-            V = D * k * i * T
-            print(V)
+            try:
+                V = D * k * i * T
+            except ZeroDivisionError:
+                V = 1
+            print("V = " + str(V))
             print('See you later alligator')
