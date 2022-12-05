@@ -1,0 +1,7 @@
+<style>
+/* Стили кнопки */
+.iksweb{display: inline-block;cursor: pointer; font-size:14px;text-decoration:none;padding:10px 20px; color:#26ff00;background:#0009ff;border-radius:13px;border:2px solid #ffffff;}
+.iksweb:hover{background:#0009ff;color:#ffb300;border:2px solid #0009ff;transition: all 0.6s ease;}
+</style>
+
+<a class="iksweb" href="https://schukchu.github.io/"   title="мой гитхабик">мой гитхабик</a>
