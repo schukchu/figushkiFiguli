@@ -5,9 +5,9 @@ with open ('24.txt') as f:
     lot = lot.replace('A', 'G').replace('O', 'G')
     lot = lot.replace('SG', '*')
     for i in lot:
-      if i = '*':
+      if i =='*':
         k += 1
         km = max(k, km)
-      else: 
+      else:
         k = 0
     print(km)
