@@ -81,3 +81,4 @@ with open('26.txt') as f:
             k+=1
 print(k,mel)
       
+https://deepnote.com/@lyctpu/EGE23-e70e0880-8033-40a8-abb8-4157d3d12909
