@@ -53,11 +53,13 @@ if (addict + surplus) % 14 == 0:    - Проверка кратности чис
    print((addict + surplus)/14)     - Выведение числа, составленного из двух перменных, над суммой которых была совершена операция
     
 #16
+itog1=itog2=1
 
 #17
-    
-#23
-
+s.append(nums[i]+nums[i+1])  - Добавление в массив числа
+for i in range(len(nums)-1): - Перебор по элементу массива
+        a=abs(nums[i])%10
+      
 #24    
 with open ('24.txt') as f:
     lot = f.readline.replace('C', 'G').replace('F', 'G').replace('A', 'O').replace('E', 'O').replace('GO', '*')  - Через серию замен все интерусующие нас комбинации
