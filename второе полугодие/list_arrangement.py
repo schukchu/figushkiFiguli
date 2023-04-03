@@ -9,3 +9,4 @@ for i in range (len(unt)-1):
             unt[i+1] = fef
             print("Done " + str(unt[i]) + str(unt[i+1]))
 print(unt)
+# if all
