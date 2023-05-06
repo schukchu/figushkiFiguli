@@ -3,9 +3,6 @@ s = [bi,li,ti,li]
 for i in s:
   print(i)
 2. Генерация всех комбинаций
-I
-
-II
 a = product('wefui', repeat=3)
 3. Анализ пар в списке
 s=[1,2,3,4,5]
